@@ -1,6 +1,5 @@
 import pandas as pd
 df = pd.read_csv("GlobalLandTemperaturesByCity_100.csv")
-print(df.columns)
 rows = len(df)
 for idx in range(0, rows):
     date = df.ix[idx]['dt']
@@ -13,4 +12,4 @@ for idx in range(0, rows):
     query ="""INSERT INTO GlobalLandTemperaturesByCity_10000 (dt, Country, AverageTemperature,AverageTemperatureUncertainty, Longitude, Latitude,City)
     VALUES ("{dt}","{country}",{averagetemperature},{longitude},{latitude},"{city}")""".format(dt=date, country=country,averagetemperature=averagetemperature, longitude=longitude, latitude=latitude, city=city) 
     print(query)
-    break
+
