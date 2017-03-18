@@ -1,5 +1,5 @@
 import pandas as pd
-df = pd.read_csv("GlobalLandTemperaturesByCity_100.csv")
+df = pd.read_csv("GlobalLandTemperaturesByCity_10000.csv")
 rows = len(df)
 for idx in range(0, rows):
     date = df.ix[idx]['dt']
