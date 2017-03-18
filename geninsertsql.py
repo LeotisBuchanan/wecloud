@@ -4,7 +4,7 @@ rows = len(df)
 for idx in range(0, rows):
     date = df.ix[idx]['dt']
     country  = df.ix[idx]['Country']
-    averagetemperature = df.ix[idx]['AverageTemperat"ure']
+    averagetemperature = df.ix[idx]['AverageTemperature']
     city = df.ix[idx]['City']
     latitude = df.ix[idx]['Latitude']
     longitude = df.ix[idx]['Longitude']
